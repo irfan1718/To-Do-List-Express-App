@@ -10,6 +10,7 @@ h1 {
   padding: 10px;
 }
 
+.head,
 .box {
   max-width: 400px;
   margin: 50px auto;
@@ -95,12 +96,13 @@ footer {
 }
 
 @media screen and (min-width: 2000px) {
+  .head,
   .box {
-    min-width: 800px;
+    max-width: 800px;
   }
 
   input[type='text'] {
-    width: 700px;
+    min-width: 700px;
     font-size: 35px;
   }
 
@@ -110,7 +112,7 @@ footer {
   }
 
   .item {
-    max-height: 100px;
+    min-height: 150px;
   }
 
   h1 {
@@ -131,22 +133,40 @@ footer {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 390px) {
+  .head,
   .box {
-    min-width: 500px;
+    max-width: 700px;
   }
 
   .item {
-    min-height: 100px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .box {
-    min-width: 1000px;
+    height: 100px;
   }
 
-  .item {
-    min-height: 200px;
+  input[type='text'] {
+    min-width: 550px;
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+  input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 32px;
   }
 }
